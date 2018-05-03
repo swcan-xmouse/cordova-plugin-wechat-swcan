@@ -2,12 +2,13 @@
 
 ## 2.3.0 - 2018-04-27
 ### Removed
-- Share with mini-program (See #427, #428)
+- Share with mini-program 
+Modify by xmouse
 
 ## 2.2.0 - 2018-04-26
 ### Added
-- Share with mini-program (pull request #417 by xingducai)
-- Add sub merchant support (pull request #401 by wxp-mjs)
+- Share with mini-program 
+- Add sub merchant support 
 
 ## 2.1.0 - 2017-11-16
 ### Added
