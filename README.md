@@ -8,8 +8,6 @@ Share title, description, image, and link to wechat moment(朋友圈)，choose i
 
 # Example
 
-See [cordova-plugin-wechat-example](https://github.com/xmouse-swcan/cordova-plugin-wechat-example)
-
 # Install
 
 1. ```cordova plugin add cordova-plugin-wechat  --variable wechatappid=YOUR_WECHAT_APPID```, or using [plugman](https://npmjs.org/package/plugman), [phonegap](https://npmjs.org/package/phonegap), [ionic](http://ionicframework.com/)
@@ -93,8 +91,9 @@ Wechat.share({
 
 ## Send payment request
 ```Javascript
-// See https://github.com/xmouse-swcan/cordova-plugin-wechat-example/blob/master/server/payment_demo.php for php demo
+
 var params = {
+	appid:'wx201411101639507cb',
     partnerid: '10000100', // merchant id
     prepayid: 'wx201411101639507cbf6ffd8b0779950874', // prepay id
     noncestr: '1add1a30ac87aa2db72f57a2375d8fec', // nonce
@@ -111,7 +110,7 @@ Wechat.sendPaymentRequest(params, function () {
 
 ## Choose invoices from card list
 ```Javascript
-//offical doc https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1496561749_f7T6D
+
 var params = {
     timeStamp: '1510198391', // timeStamp
     signType: 'SHA1', // sign type
